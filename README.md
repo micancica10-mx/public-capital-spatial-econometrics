@@ -15,13 +15,13 @@ The analysis uses a balanced panel of 48 U.S. states from 1970 to 1986, sourced 
 
 The results suggest that public capital does not have a positive and robust effect on state-level output. Instrumental variable estimates indicate a negative relationship, potentially reflecting inefficiencies in public investment. The disaggregated analysis suggests that this negative effect is primarily associated with public buildings and structures.
 
-## Data
+## Data and reproducibility
 
-Balanced panel of 48 U.S. states (1970–1986), based on Baltagi (1995).
+- **Panel data:** The `Produc` dataset is available directly through the R package `plm` (`data(Produc, package = "plm")`). The analysis uses 48 U.S. states observed from 1970 to 1986. The spatial weights matrix `usaww` is also loaded in the script.
+- **Geographic data:** The mapping section requires the U.S. Census Bureau's **2018 Cartographic Boundary File for U.S. States (1:5,000,000)**, including `cb_2018_us_state_5m.rar` and its companion files (`.shx`, `.dbf`, `.prj`, etc.). 
+- **Software:** R.
+- **Execution:** Run `public_capital_spatial_econometrics.R` from a project directory containing the extracted geographic files. Some sections of the original research script may require additional preparation or debugging before end-to-end execution.
 
-## Research Area
-
-Applied Econometrics · Spatial Econometrics · Public Economics
 
 ## References
 -   Baltagi, B. H. (1995). Econometric Analysis of Panel Data. Wiley.
